@@ -1,0 +1,7 @@
+{
+  "name": "Remix: Easy Terrain / Terén Ľahko -cz",
+  "description": "Web application to convert GeoTIFF elevation data or download ALOS 3D data for Therion surface models.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
