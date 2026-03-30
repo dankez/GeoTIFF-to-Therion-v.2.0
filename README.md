@@ -54,11 +54,17 @@
 
 ## 📖 How to Use / Ako Používať
 
+### Installation / Inštalácia
+1. Clone the repository: `git clone https://github.com/DankeZ/easy-terrain.git`
+2. Install dependencies: `npm install`
+3. Start the development server: `npm run dev`
+
 ### Mode A: Auto Surface (Recommended for Global Data)
 1.  Click the **Auto Surface** tab.
 2.  **Enter Location**: Type Lat/Lon coordinates or click "My Location".
 3.  **Set Dimensions**: Define the size of the area in meters (e.g., 5000m x 5000m).
 4.  **Download**: Click "Download & Process". The app fetches ALOS data, reprojects it to UTM (metric), creates the grid, and prepares output files.
+5.  **Raw Data**: You can download the raw elevation data using the "Raw" button in the results.
 
 ### Mode B: Upload File (Recommended for High-Res Local Data)
 1.  Click the **Upload File** tab.
@@ -66,6 +72,14 @@
 3.  **Settings**: Select the correct Coordinate System (e.g., "S-JTSK" for Slovakia).
 4.  **Preview & Crop**: Check the visual preview. Use the **Crop Surface** button to select a smaller area if needed.
 5.  **Convert**: Click "Convert Files".
+6.  **Raw Data**: You can download the raw elevation data using the "Raw" button in the results.
+
+### 🗺️ Using ČÚZK Data (Czech Republic)
+When using ČÚZK data (DMR 5G/DMP OK), the application performs **image correlation** (obrazová korelácia). This process aligns the high-resolution elevation grid with the corresponding orthophoto. By correlating the coordinates of the elevation grid with the orthophoto's georeferencing data (provided in the `.jgw` world file), the application ensures that the terrain model and the visual map layer are perfectly aligned, allowing for accurate visualization and analysis.
+
+1.  Select "ČÚZK" as the data source in the "Upload File" tab.
+2.  Upload the `.tif` (elevation) and `.jgw` (world file) for the terrain.
+3.  For orthophoto data, visit the [ČÚZK Open Data portal](https://openzu.cuzk.gov.cz/opendata/ORTOFOTO/).
 
 ### Režim A: Automatický Povrch (Odporúčané pre svet)
 1.  Kliknite na záložku **Automatický povrch**.
