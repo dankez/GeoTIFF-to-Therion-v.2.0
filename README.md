@@ -90,6 +90,7 @@
 | **Grid Data (.txt)** | The raw elevation matrix required by Therion. | Surová matica výšok vyžadovaná Therionom. |
 | **DXF Export** | 3D Faces mesh compatible with standard CAD tools. Useful for surveyors. | Sieť 3D plôch kompatibilná s CAD nástrojmi. Užitočné pre geodetov. |
 | **STL Export** | Binary STL mesh for 3D printing terrain models. | Binárny STL model pre 3D tlač terénu. |
+| **Raw Data (.bin)** | Raw elevation data before processing. | Surové výškové dáta pred spracovaním. |
 | **Invert Surface** | Changes sun azimuth by 180° to fix "relief inversion" optical illusions. | Zmení azimut slnka o 180° na opravu optického klamu "inverzie reliéfu". |
 | **Resample** | Reduces grid resolution (e.g., factor 2 = 25% of original size) to optimize performance. | Znižuje rozlíšenie mriežky (napr. faktor 2 = 25% pôvodnej veľkosti) pre lepší výkon. |
 
@@ -99,6 +100,7 @@
 
 *   **Auto Mode**: Uses the **ALOS World 3D - 30m (AW3D30)** dataset provided by JAXA via the [OpenTopography API](https://opentopography.org/).
 *   **Local Mode (Slovakia)**: Optimized for **DMR 5.0** data from [ZBGIS Map Portal](https://zbgis.skgeodesy.sk/mapka/sk/teren).
+*   **Local Mode (Czech Republic)**: Supports **DMR 5G** and **DMP OK** data from [ČÚZK](https://ags.cuzk.gov.cz/). For orthophoto data, please visit the [ČÚZK Open Data portal](https://openzu.cuzk.gov.cz/opendata/ORTOFOTO/).
 
 ---
 
